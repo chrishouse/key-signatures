@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Key Signature Practice</title>
+        <link rel="stylesheet" href="styles/style.css" />
+        <script async src="scripts/main.min.js"></script>
+    </head>
+    <body>
+        <section class="top-bar">
+            <div class="key-select">
+                <p>Select the keys to practice:</p>
+                <div>
+                    <input
+                        type="checkbox"
+                        name="practice"
+                        id="C"
+                        value="C"
+                        checked
+                    /><label for="C">C</label>
+                </div>
+                <div>
+                    <input
+                        type="checkbox"
+                        name="practice"
+                        id="G"
+                        value="G"
+                        checked
+                    /><label for="G">G</label>
+                </div>
+                <div>
+                    <input
+                        type="checkbox"
+                        name="practice"
+                        id="D"
+                        value="D"
+                        checked
+                    /><label for="D">D</label>
+                </div>
+                <div>
+                    <input
+                        type="checkbox"
+                        name="practice"
+                        id="A"
+                        value="A"
+                        checked
+                    /><label for="A">A</label>
+                </div>
+                <div>
+                    <input
+                        type="checkbox"
+                        name="practice"
+                        id="E"
+                        value="E"
+                        checked
+                    /><label for="E">E</label>
+                </div>
+                <div>
+                    <input
+                        type="checkbox"
+                        name="practice"
+                        id="B"
+                        value="B"
+                        checked
+                    /><label for="B">B</label>
+                </div>
+                <div>
+                    <input
+                        type="checkbox"
+                        name="practice"
+                        id="F#"
+                        value="F#"
+                        checked
+                    /><label for="F#">F#</label>
+                </div>
+                <div>
+                    <input
+                        type="checkbox"
+                        name="practice"
+                        id="C#"
+                        value="C#"
+                        checked
+                    /><label for="C#">C#</label>
+                </div>
+                <div>
+                    <input
+                        type="checkbox"
+                        name="practice"
+                        id="F"
+                        value="F"
+                        checked
+                    /><label for="F">F</label>
+                </div>
+                <div>
+                    <input
+                        type="checkbox"
+                        name="practice"
+                        id="Bb"
+                        value="Bb"
+                        checked
+                    /><label for="Bb">Bb</label>
+                </div>
+                <div>
+                    <input
+                        type="checkbox"
+                        name="practice"
+                        id="Eb"
+                        value="Eb"
+                        checked
+                    /><label for="Eb">Eb</label>
+                </div>
+                <div>
+                    <input
+                        type="checkbox"
+                        name="practice"
+                        id="Ab"
+                        value="Ab"
+                        checked
+                    /><label for="Ab">Ab</label>
+                </div>
+                <div>
+                    <input
+                        type="checkbox"
+                        name="practice"
+                        id="Db"
+                        value="Db"
+                        checked
+                    /><label for="Db">Db</label>
+                </div>
+                <div>
+                    <input
+                        type="checkbox"
+                        name="practice"
+                        id="Gb"
+                        value="Gb"
+                        checked
+                    /><label for="Gb">Gb</label>
+                </div>
+                <div>
+                    <input
+                        type="checkbox"
+                        name="practice"
+                        id="Cb"
+                        value="Cb"
+                        checked
+                    /><label for="Cb">Cb</label>
+                </div>
+                <div class="key-select-buttons">
+                    <button class="check-all">Select All</button>
+                    <button class="uncheck-all">Unselect All</button>
+                </div>
+            </div>
+            <button class="button-show-a-key">Show a New Key</button>
+        </section>
+
+        <div class="key-box">
+            <div class="key key-root">
+                <div class="note-number">I</div>
+                <div id="key-root"></div>
+            </div>
+            <div class="key key-2">
+                <div class="note-number">II</div>
+                <select name="key-2" id="key-2">
+                    <option value=""></option>
+                    <option value="Ab">Ab</option>
+                    <option value="A">A</option>
+                    <option value="A#">A#</option>
+                    <option value="Bb">Bb</option>
+                    <option value="B">B</option>
+                    <option value="B#">B#</option>
+                    <option value="Cb">Cb</option>
+                    <option value="C">C</option>
+                    <option value="C#">C#</option>
+                    <option value="Db">Db</option>
+                    <option value="D">D</option>
+                    <option value="D#">D#</option>
+                    <option value="Eb">Eb</option>
+                    <option value="E">E</option>
+                    <option value="E#">E#</option>
+                    <option value="Fb">Fb</option>
+                    <option value="F">F</option>
+                    <option value="F#">F#</option>
+                    <option value="Gb">Gb</option>
+                    <option value="G">G</option>
+                    <option value="G#">G#</option>
+                </select>
+            </div>
+            <div class="key key-3">
+                <div class="note-number">III</div>
+                <select name="key-3" id="key-3">
+                    <option value=""></option>
+                    <option value="Ab">Ab</option>
+                    <option value="A">A</option>
+                    <option value="A#">A#</option>
+                    <option value="Bb">Bb</option>
+                    <option value="B">B</option>
+                    <option value="B#">B#</option>
+                    <option value="Cb">Cb</option>
+                    <option value="C">C</option>
+                    <option value="C#">C#</option>
+                    <option value="Db">Db</option>
+                    <option value="D">D</option>
+                    <option value="D#">D#</option>
+                    <option value="Eb">Eb</option>
+                    <option value="E">E</option>
+                    <option value="E#">E#</option>
+                    <option value="Fb">Fb</option>
+                    <option value="F">F</option>
+                    <option value="F#">F#</option>
+                    <option value="Gb">Gb</option>
+                    <option value="G">G</option>
+                    <option value="G#">G#</option>
+                </select>
+            </div>
+            <div class="key key-4">
+                <div class="note-number">IV</div>
+                <select name="key-4" id="key-4">
+                    <option value=""></option>
+                    <option value="Ab">Ab</option>
+                    <option value="A">A</option>
+                    <option value="A#">A#</option>
+                    <option value="Bb">Bb</option>
+                    <option value="B">B</option>
+                    <option value="B#">B#</option>
+                    <option value="Cb">Cb</option>
+                    <option value="C">C</option>
+                    <option value="C#">C#</option>
+                    <option value="Db">Db</option>
+                    <option value="D">D</option>
+                    <option value="D#">D#</option>
+                    <option value="Eb">Eb</option>
+                    <option value="E">E</option>
+                    <option value="E#">E#</option>
+                    <option value="Fb">Fb</option>
+                    <option value="F">F</option>
+                    <option value="F#">F#</option>
+                    <option value="Gb">Gb</option>
+                    <option value="G">G</option>
+                    <option value="G#">G#</option>
+                </select>
+            </div>
+            <div class="key key-5">
+                <div class="note-number">V</div>
+                <select name="key-5" id="key-5">
+                    <option value=""></option>
+                    <option value="Ab">Ab</option>
+                    <option value="A">A</option>
+                    <option value="A#">A#</option>
+                    <option value="Bb">Bb</option>
+                    <option value="B">B</option>
+                    <option value="B#">B#</option>
+                    <option value="Cb">Cb</option>
+                    <option value="C">C</option>
+                    <option value="C#">C#</option>
+                    <option value="Db">Db</option>
+                    <option value="D">D</option>
+                    <option value="D#">D#</option>
+                    <option value="Eb">Eb</option>
+                    <option value="E">E</option>
+                    <option value="E#">E#</option>
+                    <option value="Fb">Fb</option>
+                    <option value="F">F</option>
+                    <option value="F#">F#</option>
+                    <option value="Gb">Gb</option>
+                    <option value="G">G</option>
+                    <option value="G#">G#</option>
+                </select>
+            </div>
+            <div class="key key-6">
+                <div class="note-number">VI</div>
+                <select name="key-6" id="key-6">
+                    <option value=""></option>
+                    <option value="Ab">Ab</option>
+                    <option value="A">A</option>
+                    <option value="A#">A#</option>
+                    <option value="Bb">Bb</option>
+                    <option value="B">B</option>
+                    <option value="B#">B#</option>
+                    <option value="Cb">Cb</option>
+                    <option value="C">C</option>
+                    <option value="C#">C#</option>
+                    <option value="Db">Db</option>
+                    <option value="D">D</option>
+                    <option value="D#">D#</option>
+                    <option value="Eb">Eb</option>
+                    <option value="E">E</option>
+                    <option value="E#">E#</option>
+                    <option value="Fb">Fb</option>
+                    <option value="F">F</option>
+                    <option value="F#">F#</option>
+                    <option value="Gb">Gb</option>
+                    <option value="G">G</option>
+                    <option value="G#">G#</option>
+                </select>
+            </div>
+            <div class="key key-7">
+                <div class="note-number">VII</div>
+                <select name="key-7" id="key-7">
+                    <option value=""></option>
+                    <option value="Ab">Ab</option>
+                    <option value="A">A</option>
+                    <option value="A#">A#</option>
+                    <option value="Bb">Bb</option>
+                    <option value="B">B</option>
+                    <option value="B#">B#</option>
+                    <option value="Cb">Cb</option>
+                    <option value="C">C</option>
+                    <option value="C#">C#</option>
+                    <option value="Db">Db</option>
+                    <option value="D">D</option>
+                    <option value="D#">D#</option>
+                    <option value="Eb">Eb</option>
+                    <option value="E">E</option>
+                    <option value="E#">E#</option>
+                    <option value="Fb">Fb</option>
+                    <option value="F">F</option>
+                    <option value="F#">F#</option>
+                    <option value="Gb">Gb</option>
+                    <option value="G">G</option>
+                    <option value="G#">G#</option>
+                </select>
+            </div>
+            <div class="key key-octave">
+                <div class="note-number">Octave</div>
+                <select name="key-octave" id="key-octave">
+                    <option value=""></option>
+                    <option value="Ab">Ab</option>
+                    <option value="A">A</option>
+                    <option value="A#">A#</option>
+                    <option value="Bb">Bb</option>
+                    <option value="B">B</option>
+                    <option value="B#">B#</option>
+                    <option value="Cb">Cb</option>
+                    <option value="C">C</option>
+                    <option value="C#">C#</option>
+                    <option value="Db">Db</option>
+                    <option value="D">D</option>
+                    <option value="D#">D#</option>
+                    <option value="Eb">Eb</option>
+                    <option value="E">E</option>
+                    <option value="E#">E#</option>
+                    <option value="Fb">Fb</option>
+                    <option value="F">F</option>
+                    <option value="F#">F#</option>
+                    <option value="Gb">Gb</option>
+                    <option value="G">G</option>
+                    <option value="G#">G#</option>
+                </select>
+            </div>
+        </div>
+
+        <button class="check-answers">Check Your Answers</button>
+
+        <div class="results"></div>
+
+        <button class="show-answers">Show the Correct Answers</button>
+    </body>
+</html>
